@@ -1,0 +1,82 @@
+.admin-sidebar {
+  background: var(--black);
+  color: var(--white);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-right: var(--border);
+}
+
+.admin-sidebar-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.admin-sidebar-brand .gdg-logo-img {
+  filter: brightness(1.15);
+}
+
+.admin-sidebar-title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+}
+
+.admin-sidebar-title span {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.admin-sidebar-title strong {
+  font-size: 1.5rem;
+  color: var(--yellow);
+}
+
+.admin-sidebar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.admin-sidebar nav a {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  border: 2px solid transparent;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.admin-sidebar nav a:hover,
+.admin-sidebar nav a.active {
+  border-color: var(--white);
+  background: var(--blue);
+}
+
+.admin-sidebar-footer {
+  margin-top: auto;
+}
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    border-right: none;
+    border-bottom: var(--border);
+  }
+
+  .admin-sidebar nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .admin-sidebar-footer {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.gdg-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.gdg-logo-img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  /* Preserve official colors — no filters or recoloring */
+}
+
+.gdg-logo-sm .gdg-logo-img {
+  max-height: 36px;
+}
+
+.gdg-logo-md .gdg-logo-img {
+  max-height: 48px;
+}
+
+.gdg-logo-lg .gdg-logo-img {
+  max-height: 64px;
+}

@@ -1,0 +1,52 @@
+.site-footer {
+  border-top: var(--border);
+  background: var(--white);
+  margin-top: auto;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.9rem;
+}
+
+.footer-text strong {
+  font-family: var(--font-display);
+  letter-spacing: 0.06em;
+}
+
+.footer-geo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.geo-sq {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--black);
+}
+
+.geo-circ {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+}
+
+.geo-sq.red,
+.geo-circ.red { background: var(--red); }
+.geo-sq.yellow,
+.geo-circ.yellow { background: var(--yellow); }
+.geo-sq.blue,
+.geo-circ.blue { background: var(--blue); }

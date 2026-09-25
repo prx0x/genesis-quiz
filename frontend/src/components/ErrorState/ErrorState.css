@@ -1,0 +1,26 @@
+.error-state {
+  border: var(--border);
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+.error-mark {
+  width: 48px;
+  height: 48px;
+  background: var(--red);
+  border: 3px solid var(--black);
+  margin: 0 auto 1.25rem;
+}
+
+.error-state h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+}
+
+.error-state p {
+  margin-bottom: 1.5rem;
+  opacity: 0.85;
+}

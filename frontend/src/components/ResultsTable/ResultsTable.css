@@ -1,0 +1,16 @@
+.sort-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+}
+
+.sort-btn:hover {
+  text-decoration: underline;
+}

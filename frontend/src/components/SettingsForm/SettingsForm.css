@@ -1,0 +1,12 @@
+.settings-form {
+  border: var(--border);
+  background: var(--white);
+  padding: 1.5rem;
+  max-width: 720px;
+}
+
+.toggle-row input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--blue);
+}

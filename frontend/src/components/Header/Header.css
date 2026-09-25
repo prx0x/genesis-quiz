@@ -1,0 +1,104 @@
+.site-header {
+  border-bottom: var(--border);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  min-height: 64px;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.header-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.header-title-block {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  border-left: var(--border);
+  padding-left: 1rem;
+}
+
+.header-event {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.header-version {
+  font-size: 1.1rem;
+  color: var(--red);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.header-avatar,
+.header-avatar-fallback {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--black);
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.header-avatar-fallback {
+  display: grid;
+  place-items: center;
+  background: var(--blue);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+}
+
+.header-username {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-link {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .header-title-block {
+    display: none;
+  }
+
+  .header-username {
+    display: none;
+  }
+}

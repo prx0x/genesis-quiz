@@ -1,0 +1,152 @@
+.geo-deco {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.shape {
+  position: absolute;
+  border: 3px solid var(--black);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.circle-sm {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+}
+
+.square {
+  width: 72px;
+  height: 72px;
+}
+
+.square-sm {
+  width: 24px;
+  height: 24px;
+}
+
+.rect {
+  width: 140px;
+  height: 28px;
+}
+
+.line-h {
+  height: 3px;
+  width: 180px;
+  border: none;
+  background: var(--black);
+}
+
+.line-v {
+  width: 3px;
+  height: 120px;
+  border: none;
+  background: var(--black);
+}
+
+.blue { background: var(--blue); }
+.red { background: var(--red); }
+.yellow { background: var(--yellow); }
+.black { background: var(--black); }
+
+.geo-deco-hero .circle.blue {
+  width: 160px;
+  height: 160px;
+  top: 8%;
+  right: 6%;
+  animation: geo-in 700ms ease both;
+}
+
+.geo-deco-hero .square.red {
+  bottom: 18%;
+  left: 4%;
+  animation: geo-in 700ms ease 120ms both;
+}
+
+.geo-deco-hero .rect.yellow {
+  top: 22%;
+  left: 12%;
+  animation: geo-in 700ms ease 200ms both;
+}
+
+.geo-deco-hero .line-h {
+  bottom: 28%;
+  right: 18%;
+}
+
+.geo-deco-hero .line-v {
+  top: 12%;
+  left: 48%;
+}
+
+.geo-deco-hero .circle-sm.black {
+  top: 40%;
+  right: 28%;
+}
+
+.geo-deco-hero .square-sm.blue {
+  bottom: 12%;
+  right: 10%;
+}
+
+.geo-deco-corner .circle.blue {
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  right: -20px;
+}
+
+.geo-deco-corner .square.red {
+  width: 40px;
+  height: 40px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.geo-deco-corner .rect.yellow,
+.geo-deco-corner .line-h,
+.geo-deco-corner .line-v,
+.geo-deco-corner .circle-sm,
+.geo-deco-corner .square-sm {
+  display: none;
+}
+
+@keyframes geo-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .geo-deco-hero .circle.blue {
+    width: 90px;
+    height: 90px;
+    opacity: 0.85;
+  }
+
+  .geo-deco-hero .square.red {
+    width: 40px;
+    height: 40px;
+  }
+
+  .geo-deco-hero .rect.yellow {
+    width: 80px;
+    height: 18px;
+  }
+
+  .geo-deco-hero .line-v,
+  .geo-deco-hero .line-h {
+    display: none;
+  }
+}

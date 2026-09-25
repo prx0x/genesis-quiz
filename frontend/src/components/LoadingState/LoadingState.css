@@ -1,0 +1,43 @@
+.loading-state {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.loading-geo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.loading-sq,
+.loading-circ {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--black);
+  animation: pulse 900ms ease infinite;
+}
+
+.loading-circ {
+  border-radius: 50%;
+  animation-delay: 150ms;
+}
+
+.loading-sq.yellow {
+  animation-delay: 300ms;
+}
+
+.loading-sq.red { background: var(--red); }
+.loading-circ.blue { background: var(--blue); }
+.loading-sq.yellow { background: var(--yellow); }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.85); }
+}

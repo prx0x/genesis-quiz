@@ -1,0 +1,34 @@
+.question-card {
+  border: var(--border);
+  background: var(--white);
+  padding: 1.5rem;
+}
+
+.question-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.question-number {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.question-text {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+}
+
+.question-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
